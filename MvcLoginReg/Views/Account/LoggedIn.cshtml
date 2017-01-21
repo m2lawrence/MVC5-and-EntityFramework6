@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "LoggedIn";
+}
+
+
+<%-- Comment: Here I will write out the data from the session. --%>
+@if(Session["UserId"] != null)
+{ 
+    <h4>Hello @Session["Username"].ToString()</h4>
+}
